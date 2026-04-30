@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="Core.Abstractions/Core.Abstractions.csproj" />
+  <Project Path="Core.Cqrs/Core.Cqrs.csproj" Id="d9b2b88f-b90b-4955-97cd-6012c0263fff" />
+  <Project Path="Core.Domain/Core.Domain.csproj" />
+  <Project Path="Core.Extensions/Core.Extensions.csproj" Id="30e73b95-b4eb-4d45-8cfe-56323c2ef18b" />
+  <Project Path="Core.Persistence/Core.Persistence.csproj" />
+  <Project Path="Core.WebApi/Core.WebApi.csproj" Id="2b0e66b6-8601-49e6-9e5c-b541051ff854" />
+</Solution>
