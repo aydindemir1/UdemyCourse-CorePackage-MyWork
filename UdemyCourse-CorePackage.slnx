@@ -1,6 +1,8 @@
 <Solution>
   <Project Path="Core.Abstractions/Core.Abstractions.csproj" />
+  <Project Path="Core.Application/Core.Application.csproj" Id="ff264008-a99d-43f6-9350-e7de8bd49e73" />
   <Project Path="Core.Cqrs/Core.Cqrs.csproj" Id="d9b2b88f-b90b-4955-97cd-6012c0263fff" />
+  <Project Path="Core.CrossCuttingConcerns.Exceptions/Core.CrossCuttingConcerns.Exceptions.csproj" Id="9145e140-0260-4d79-80c7-70b82ed91333" />
   <Project Path="Core.Domain/Core.Domain.csproj" />
   <Project Path="Core.Extensions/Core.Extensions.csproj" Id="30e73b95-b4eb-4d45-8cfe-56323c2ef18b" />
   <Project Path="Core.Persistence/Core.Persistence.csproj" />
