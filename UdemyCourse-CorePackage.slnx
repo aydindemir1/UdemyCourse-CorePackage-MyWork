@@ -5,7 +5,10 @@
   <Project Path="Core.CrossCuttingConcerns.Exceptions/Core.CrossCuttingConcerns.Exceptions.csproj" Id="9145e140-0260-4d79-80c7-70b82ed91333" />
   <Project Path="Core.Domain/Core.Domain.csproj" />
   <Project Path="Core.ElasticSearch/Core.ElasticSearch.csproj" Id="44c0997d-555d-431d-b913-9e5993380992" />
+  <Project Path="Core.Events/Core.Events.csproj" Id="49edc440-7fb8-4dae-bf90-fd121f54a293" />
   <Project Path="Core.Extensions/Core.Extensions.csproj" Id="30e73b95-b4eb-4d45-8cfe-56323c2ef18b" />
+  <Project Path="Core.Messaging.Postgres/Core.Messaging.Postgres.csproj" Id="d3abf627-a2f6-4bb6-b72e-4f5218f8f602" />
+  <Project Path="Core.Messaging/Core.Messaging.csproj" Id="843c271c-292f-42fb-a883-52137e95ccb0" />
   <Project Path="Core.Persistence/Core.Persistence.csproj" />
   <Project Path="Core.WebApi/Core.WebApi.csproj" Id="2b0e66b6-8601-49e6-9e5c-b541051ff854" />
 </Solution>
