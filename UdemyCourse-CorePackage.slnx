@@ -11,5 +11,6 @@
   <Project Path="Core.Messaging.Transport.RabbitMq/Core.Messaging.Transport.RabbitMq.csproj" Id="1865df2a-2268-44b3-9ff3-d3f9b23885dc" />
   <Project Path="Core.Messaging/Core.Messaging.csproj" Id="843c271c-292f-42fb-a883-52137e95ccb0" />
   <Project Path="Core.Persistence/Core.Persistence.csproj" />
+  <Project Path="Core.Security.Domain/Core.Security.Domain.csproj" Id="51418084-fc4e-4aa9-8865-3e9c50af51ba" />
   <Project Path="Core.WebApi/Core.WebApi.csproj" Id="2b0e66b6-8601-49e6-9e5c-b541051ff854" />
 </Solution>
