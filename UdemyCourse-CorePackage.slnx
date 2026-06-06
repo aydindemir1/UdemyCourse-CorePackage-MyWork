@@ -12,7 +12,10 @@
   <Project Path="Core.Messaging/Core.Messaging.csproj" Id="843c271c-292f-42fb-a883-52137e95ccb0" />
   <Project Path="Core.Persistence/Core.Persistence.csproj" />
   <Project Path="Core.Security.Domain/Core.Security.Domain.csproj" Id="51418084-fc4e-4aa9-8865-3e9c50af51ba" />
+  <Project Path="Core.Security.EmailAuthenticator/Core.Security.EmailAuthenticator.csproj" Id="ca537908-a6f6-4f29-be21-1d16cec00eaa" />
   <Project Path="Core.Security.Encryption/Core.Security.Encryption.csproj" Id="d9ecebb7-a09b-48ae-8e47-7eb7416e275c" />
+  <Project Path="Core.Security.Extensions/Core.Security.Extensions.csproj" Id="d48da228-5ad1-443b-9661-293eb0c65d05" />
   <Project Path="Core.Security.Hashing/Core.Security.Hashing.csproj" Id="f9255202-3e5b-469f-9a00-363540a2495c" />
+  <Project Path="Core.Security.Jwt/Core.Security.Jwt.csproj" Id="18071d17-0ecb-42ad-a010-7f47c48cf96c" />
   <Project Path="Core.WebApi/Core.WebApi.csproj" Id="2b0e66b6-8601-49e6-9e5c-b541051ff854" />
 </Solution>
