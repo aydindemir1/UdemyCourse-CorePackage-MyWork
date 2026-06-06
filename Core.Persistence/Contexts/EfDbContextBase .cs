@@ -1,4 +1,5 @@
 ﻿using Core.Abstractions.ContextExecutions;
+using Core.Abstractions.Events.Internal;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using System.Data;
@@ -8,13 +9,13 @@ namespace Core.Persistence.Contexts
     public class EfDbContextBase : DbContext, IUnitOfWork
     {
         private IDbContextTransaction _transaction;
-       // private readonly IDomainEventDispatcher _domainEventDispatcher;
+        private readonly IDomainEventDispatcher _domainEventDispatcher;
 
-        protected EfDbContextBase(DbContextOptions options// IDomainEventDispatcher domainEventDispatcher
+        protected EfDbContextBase(DbContextOptions options, IDomainEventDispatcher domainEventDispatcher
                                                           ) : base(options)
         {
             System.Diagnostics.Debug.WriteLine($"{GetType().Name}::ctor");
-           // _domainEventDispatcher = domainEventDispatcher;
+            _domainEventDispatcher = domainEventDispatcher;
         }
 
 
