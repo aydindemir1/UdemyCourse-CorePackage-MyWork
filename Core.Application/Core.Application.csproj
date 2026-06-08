@@ -5,12 +5,16 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>3.0.0</Version>
+    <Version>3.0.1</Version>
     <PackageOutputPath>../../Packages</PackageOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Core.CrossCuttingConcerns.Exceptions" Version="3.0.0" />
+    <PackageReference Include="Core.Extensions" Version="3.0.3" />
+    <PackageReference Include="Core.Security.Domain" Version="3.0.0" />
+    <PackageReference Include="Core.Security.Extensions" Version="3.0.0" />
+    <PackageReference Include="Core.Security.Redis" Version="3.0.0" />
     <PackageReference Include="FluentValidation" Version="12.1.1" />
     <PackageReference Include="MediatR" Version="14.1.0" />
   </ItemGroup>
