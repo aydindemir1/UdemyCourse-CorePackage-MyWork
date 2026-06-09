@@ -1,4 +1,5 @@
-﻿using Core.Abstractions.Messaging.Outbox;
+﻿using Core.Abstractions.Events.Internal;
+using Core.Abstractions.Messaging.Outbox;
 using Core.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -15,10 +16,11 @@ namespace Core.Messaging.Postgres.Outbox
 
         public DbSet<OutboxMessage> OutboxMessages => Set<OutboxMessage>();
 
-        public OutboxDataContext(DbContextOptions<OutboxDataContext> options //, IDomainEventDispatcher? domainEventDispatcher = null
-                                                                             ) : base(options//, domainEventDispatcher
-                                                                                             
-                                                                                             ) { }
+        public OutboxDataContext(DbContextOptions<OutboxDataContext> options , IDomainEventDispatcher? domainEventDispatcher = null
+                                                                             ) : base(options, domainEventDispatcher) { 
+        }
+
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

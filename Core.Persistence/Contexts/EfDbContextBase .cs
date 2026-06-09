@@ -1,4 +1,5 @@
 ﻿using Core.Abstractions.ContextExecutions;
+using Core.Abstractions.Domain;
 using Core.Abstractions.Events.Internal;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
@@ -103,25 +104,25 @@ namespace Core.Persistence.Contexts
             }
         }
 
-        //public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
-        //{
-        //    var domainEvents = GatherDomainEvents();
+        public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            var domainEvents = GatherDomainEvents();
 
-        //    var result = await base.SaveChangesAsync(cancellationToken);
+            var result = await base.SaveChangesAsync(cancellationToken);
 
-        //    if (_domainEventDispatcher is not null && domainEvents.Length > 0)
-        //        await _domainEventDispatcher.DispatchAsync(domainEvents, cancellationToken);
-        //    return result;
-        //}
+            if (_domainEventDispatcher is not null && domainEvents.Length > 0)
+                await _domainEventDispatcher.DispatchAsync(domainEvents, cancellationToken);
+            return result;
+        }
 
-        //private IDomainEvent[] GatherDomainEvents()
-        //{
-        //    var aggregates = ChangeTracker.Entries<IAggregateRoot>().Where(e => e.Entity.DomainEvents.Any()).Select(e => e.Entity).ToList();
+        private IDomainEvent[] GatherDomainEvents()
+        {
+            var aggregates = ChangeTracker.Entries<IAggregateRoot>().Where(e => e.Entity.DomainEvents.Any()).Select(e => e.Entity).ToList();
 
-        //    var events = aggregates.SelectMany(a => a.DomainEvents).ToArray();
+            var events = aggregates.SelectMany(a => a.DomainEvents).ToArray();
 
-        //    aggregates.ForEach(a => a.ClearDomainEvents());
-        //    return events;
-        //}
+            aggregates.ForEach(a => a.ClearDomainEvents());
+            return events;
+        }
     }
 }
