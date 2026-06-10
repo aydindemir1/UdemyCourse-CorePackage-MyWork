@@ -12,6 +12,7 @@
   <Project Path="Core.Messaging.Transport.RabbitMq/Core.Messaging.Transport.RabbitMq.csproj" Id="1865df2a-2268-44b3-9ff3-d3f9b23885dc" />
   <Project Path="Core.Messaging/Core.Messaging.csproj" Id="843c271c-292f-42fb-a883-52137e95ccb0" />
   <Project Path="Core.Persistence/Core.Persistence.csproj" />
+  <Project Path="Core.Resiliency/Core.Resiliency.csproj" Id="25c2751b-2483-4680-9f32-5d37b2690656" />
   <Project Path="Core.Security.Domain/Core.Security.Domain.csproj" Id="51418084-fc4e-4aa9-8865-3e9c50af51ba" />
   <Project Path="Core.Security.EmailAuthenticator/Core.Security.EmailAuthenticator.csproj" Id="ca537908-a6f6-4f29-be21-1d16cec00eaa" />
   <Project Path="Core.Security.Encryption/Core.Security.Encryption.csproj" Id="d9ecebb7-a09b-48ae-8e47-7eb7416e275c" />
