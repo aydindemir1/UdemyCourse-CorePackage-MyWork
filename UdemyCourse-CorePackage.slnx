@@ -11,6 +11,7 @@
   <Project Path="Core.Messaging.Postgres/Core.Messaging.Postgres.csproj" Id="d3abf627-a2f6-4bb6-b72e-4f5218f8f602" />
   <Project Path="Core.Messaging.Transport.RabbitMq/Core.Messaging.Transport.RabbitMq.csproj" Id="1865df2a-2268-44b3-9ff3-d3f9b23885dc" />
   <Project Path="Core.Messaging/Core.Messaging.csproj" Id="843c271c-292f-42fb-a883-52137e95ccb0" />
+  <Project Path="Core.Monitoring/Core.Monitoring.csproj" Id="5d27b25f-081f-4b41-826b-72d0cd5aedf1" />
   <Project Path="Core.Persistence/Core.Persistence.csproj" />
   <Project Path="Core.Resiliency/Core.Resiliency.csproj" Id="25c2751b-2483-4680-9f32-5d37b2690656" />
   <Project Path="Core.Scheduling.Hangfire/Core.Scheduling.Hangfire.csproj" Id="ba738962-f412-47c0-809a-6600d972fb27" />
