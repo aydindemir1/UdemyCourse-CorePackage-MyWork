@@ -22,5 +22,6 @@
   <Project Path="Core.Security.Hashing/Core.Security.Hashing.csproj" Id="f9255202-3e5b-469f-9a00-363540a2495c" />
   <Project Path="Core.Security.Jwt/Core.Security.Jwt.csproj" Id="18071d17-0ecb-42ad-a010-7f47c48cf96c" />
   <Project Path="Core.Security.Redis/Core.Security.Redis.csproj" Id="1cf65487-6522-4804-8738-81bd4b8c5827" />
+  <Project Path="Core.Tracing/Core.Tracing.csproj" Id="71da00f0-38e0-4cad-a40f-0257a0881cb4" />
   <Project Path="Core.WebApi/Core.WebApi.csproj" Id="2b0e66b6-8601-49e6-9e5c-b541051ff854" />
 </Solution>
